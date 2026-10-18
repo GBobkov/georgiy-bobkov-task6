@@ -7,7 +7,9 @@ find_package(OpenSSL REQUIRED COMPONENTS Crypto)
 find_package(Threads REQUIRED)
 
 add_executable(edition
+    src/common.cpp
     src/main.cpp
+    src/store.cpp
 )
 
 target_compile_features(edition PRIVATE cxx_std_20)
