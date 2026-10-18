@@ -7,8 +7,11 @@ find_package(OpenSSL REQUIRED COMPONENTS Crypto)
 find_package(Threads REQUIRED)
 
 add_executable(edition
+    src/client.cpp
     src/common.cpp
     src/main.cpp
+    src/net.cpp
+    src/server.cpp
     src/store.cpp
 )
 
