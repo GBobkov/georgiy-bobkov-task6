@@ -17,5 +17,6 @@ add_executable(edition
 
 target_compile_features(edition PRIVATE cxx_std_20)
 target_compile_options(edition PRIVATE -Wall -Wextra -Werror)
+target_include_directories(edition PRIVATE include)
 target_link_libraries(edition PRIVATE SQLite::SQLite3 OpenSSL::Crypto
                                       Threads::Threads)
